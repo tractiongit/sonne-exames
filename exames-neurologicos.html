@@ -8,6 +8,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    var dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'pagePostType': 'page',
+      'pagePostType2': 'single-page',
+      'pagePostAuthor': 'webmaster',
+      'pagePath': '/exames-neurologicos.html',
+      'pageTitle': 'Exames Neurológicos — Clínica Sonne'
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N9T5BCM');</script>
+  <!-- End Google Tag Manager -->
   <style>
     :root {
       --azul-escuro: #122353;
@@ -137,7 +154,7 @@
     }
 
     .hero {
-      min-height: 92vh;
+      min-height: 72vh;
       display: flex;
       align-items: center;
       background: url('assets/images/5af950d3-bg_1000000000000000000028.png') center/cover no-repeat;
@@ -182,7 +199,7 @@
 
     .photos {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 16px;
     }
 
@@ -191,7 +208,8 @@
       overflow: hidden;
       box-shadow: 0 8px 24px rgba(18, 35, 83, 0.1);
       background: var(--azul-gelo);
-      min-height: 420px;
+      min-height: 240px;
+      max-height: 280px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -203,10 +221,11 @@
 
     @media (min-width: 1025px) {
       .intro-grid {
-        grid-template-columns: 1fr 1.15fr;
+        grid-template-columns: 1fr 1.6fr;
       }
       .photo-card {
-        min-height: 520px;
+        min-height: 320px;
+        max-height: 380px;
       }
     }
 
@@ -214,6 +233,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: scale(1.05);
     }
 
     .exames-grid {
@@ -430,6 +450,10 @@
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9T5BCM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Hero -->
   <section class="hero section-dark">
@@ -437,7 +461,7 @@
       <span class="badge">Neurologia Premium</span>
       <h1>Diagnóstico Neurológico de Alta Precisão em Campinas e Hortolândia</h1>
       <p>Exames neurológicos com agilidade, tecnologia de ponta e o suporte de uma equipe de especialistas. Agende seu horário de forma simples e rápida.</p>
-      <a class="btn" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Tenho%20um%20encaminhamento%20e%20quero%20agendar%20meu%20exame%20neurol%C3%B3gico%20na%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
+      <a class="btn" data-cta-label="hero_agendar_exame" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Tenho%20um%20encaminhamento%20e%20quero%20agendar%20meu%20exame%20neurol%C3%B3gico%20na%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.797.372-.275.298-1.051 1.027-1.051 2.507 0 1.481 1.079 2.912 1.229 3.111.149.198 2.122 3.239 5.14 4.54.719.31 1.28.496 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.144 7.437h-.004c-1.107 0-2.192-.275-3.154-.8l-.226-.124-2.346.615.626-2.289-.147-.234c-.567-.904-.867-1.948-.867-3.021 0-3.206 2.608-5.813 5.814-5.813 1.552 0 3.011.606 4.107 1.705 1.096 1.1 1.699 2.558 1.699 4.108 0 3.206-2.609 5.813-5.815 5.813M12.001.8C5.49.8.4 5.889.4 12.4c0 2.186.572 4.318 1.655 6.195L.675 23.301l4.801-1.26c1.806.984 3.84 1.501 5.92 1.501h.005c6.512 0 11.8-5.289 11.8-11.8 0-3.152-1.227-6.117-3.455-8.344C18.123 1.77 15.158.8 12.001.8"/></svg>
         Agendar meu Exame Neurológico
       </a>
@@ -452,7 +476,7 @@
           <h2>A saúde não pode esperar</h2>
           <p>Na Clínica Sonne, estamos comprometidos em fornecer um atendimento médico excepcional para você e sua família.</p>
           <p>Com uma equipe altamente qualificada e equipamentos modernos, oferecemos uma gama completa de exames médicos para cuidar da sua saúde neurológica e mental.</p>
-          <a class="btn" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Quero%20agendar%20um%20exame%20na%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
+          <a class="btn" data-cta-label="intro_agendar_exame" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Quero%20agendar%20um%20exame%20na%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.797.372-.275.298-1.051 1.027-1.051 2.507 0 1.481 1.079 2.912 1.229 3.111.149.198 2.122 3.239 5.14 4.54.719.31 1.28.496 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.144 7.437h-.004c-1.107 0-2.192-.275-3.154-.8l-.226-.124-2.346.615.626-2.289-.147-.234c-.567-.904-.867-1.948-.867-3.021 0-3.206 2.608-5.813 5.814-5.813 1.552 0 3.011.606 4.107 1.705 1.096 1.1 1.699 2.558 1.699 4.108 0 3.206-2.609 5.813-5.815 5.813M12.001.8C5.49.8.4 5.889.4 12.4c0 2.186.572 4.318 1.655 6.195L.675 23.301l4.801-1.26c1.806.984 3.84 1.501 5.92 1.501h.005c6.512 0 11.8-5.289 11.8-11.8 0-3.152-1.227-6.117-3.455-8.344C18.123 1.77 15.158.8 12.001.8"/></svg>
             Agendar o exame!
           </a>
@@ -590,7 +614,7 @@
 
       <div style="text-align: center; margin-top: 36px;">
         <p>Se precisar, fale diretamente com a nossa equipe:</p>
-        <a class="btn" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Visitei%20o%20site%20e%20quero%20falar%20com%20a%20recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
+        <a class="btn" data-cta-label="footer_falar_recepcao" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Visitei%20o%20site%20e%20quero%20falar%20com%20a%20recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.797.372-.275.298-1.051 1.027-1.051 2.507 0 1.481 1.079 2.912 1.229 3.111.149.198 2.122 3.239 5.14 4.54.719.31 1.28.496 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.144 7.437h-.004c-1.107 0-2.192-.275-3.154-.8l-.226-.124-2.346.615.626-2.289-.147-.234c-.567-.904-.867-1.948-.867-3.021 0-3.206 2.608-5.813 5.814-5.813 1.552 0 3.011.606 4.107 1.705 1.096 1.1 1.699 2.558 1.699 4.108 0 3.206-2.609 5.813-5.815 5.813M12.001.8C5.49.8.4 5.889.4 12.4c0 2.186.572 4.318 1.655 6.195L.675 23.301l4.801-1.26c1.806.984 3.84 1.501 5.92 1.501h.005c6.512 0 11.8-5.289 11.8-11.8 0-3.152-1.227-6.117-3.455-8.344C18.123 1.77 15.158.8 12.001.8"/></svg>
           Fale com a Recepção
         </a>
@@ -658,6 +682,22 @@
         }
         isDragging = false;
       }, { passive: true });
+    })();
+
+    (function() {
+      var ctaButtons = document.querySelectorAll('[data-cta-label]');
+      ctaButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var ctaLabel = btn.getAttribute('data-cta-label');
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'cta_click',
+            'cta_label': ctaLabel,
+            'cta_url': btn.href,
+            'page_path': '/exames-neurologicos.html'
+          });
+        });
+      });
     })();
   </script>
 
