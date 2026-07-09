@@ -1,579 +1,705 @@
 <!DOCTYPE html>
-
-<html dir="ltr" lang="pt-BR" prefix="og: https://ogp.me/ns#">
-<head><meta charset="utf-8"/><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
-<title>Exames – Clínica Sonne1 - Clínica Sonne</title><link as="image" data-rocket-preload="" fetchpriority="high" href="assets/images/5af950d3-bg_1000000000000000000028.webp" rel="preload"/><link as="style" data-rocket-preload="" href="assets/css/css_family_Roboto_100_100italic_20.css" rel="preload"/><link href="assets/css/css_family_Roboto_100_100italic_20.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="assets/css/css_family_Roboto_100_100italic_20.css" rel="stylesheet"/></noscript>
-<!-- All in One SEO 4.9.6.2 - aioseo.com -->
-<meta content="A HORA DE SER CUIDADA: Agende o exame neurológico Com o encaminhamento médico em mãos, você já está no caminho certo na clínica Sonne. Agendar exame! [rank_math_breadcrumb] A saúde não pode esperar Na Clínica Sonne, estamos comprometidos em fornecer atendimento médico excepcional e abrangente para toda a família. Com uma equipe altamente qualificada e especializada," name="description"/>
-<meta content="max-image-preview:large" name="robots"/>
-<meta content="CMY68oUdwRSuhw-gOk4AWP-N3a6IB_A8EeXqqexEMZs" name="google-site-verification"/>
-<link href="assets/other/index.html" rel="canonical"/>
-<meta content="All in One SEO (AIOSEO) 4.9.6.2" name="generator"/>
-<meta content="pt_BR" property="og:locale"/>
-<meta content="Clínica Sonne - Neurologia Premium" property="og:site_name"/>
-<meta content="article" property="og:type"/>
-<meta content="Exames – Clínica Sonne1 - Clínica Sonne" property="og:title"/>
-<meta content="A HORA DE SER CUIDADA: Agende o exame neurológico Com o encaminhamento médico em mãos, você já está no caminho certo na clínica Sonne. Agendar exame! [rank_math_breadcrumb] A saúde não pode esperar Na Clínica Sonne, estamos comprometidos em fornecer atendimento médico excepcional e abrangente para toda a família. Com uma equipe altamente qualificada e especializada," property="og:description"/>
-<meta content="https://clinicasonne.com.br/exames-sonne/" property="og:url"/>
-<meta content="2025-01-22T18:11:51+00:00" property="article:published_time"/>
-<meta content="2025-04-02T04:49:32+00:00" property="article:modified_time"/>
-<meta content="https://www.facebook.com/profile.php?id=100091332262506" property="article:publisher"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Exames – Clínica Sonne1 - Clínica Sonne" name="twitter:title"/>
-<meta content="A HORA DE SER CUIDADA: Agende o exame neurológico Com o encaminhamento médico em mãos, você já está no caminho certo na clínica Sonne. Agendar exame! [rank_math_breadcrumb] A saúde não pode esperar Na Clínica Sonne, estamos comprometidos em fornecer atendimento médico excepcional e abrangente para toda a família. Com uma equipe altamente qualificada e especializada," name="twitter:description"/>
-<script class="aioseo-schema" type="application/ld+json">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/clinicasonne.com.br\/exames-sonne\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br#listItem","position":1,"name":"Home","item":"https:\/\/clinicasonne.com.br","nextItem":{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br\/exames-sonne\/#listItem","name":"Exames &#8211; Cl\u00ednica Sonne1"}},{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br\/exames-sonne\/#listItem","position":2,"name":"Exames &#8211; Cl\u00ednica Sonne1","previousItem":{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br#listItem","name":"Home"}}]},{"@type":"Organization","@id":"https:\/\/clinicasonne.com.br\/#organization","name":"Cl\u00ednica Sonne","description":"Neurologia Premium","url":"https:\/\/clinicasonne.com.br\/","telephone":"+5519996283086","sameAs":["https:\/\/www.facebook.com\/profile.php?id=100091332262506","https:\/\/www.instagram.com\/clinicasonne\/","https:\/\/www.youtube.com\/@ClinicaSonne","https:\/\/www.linkedin.com\/in\/fabrcio-castro-de-borba-76670728\/"]},{"@type":"WebPage","@id":"https:\/\/clinicasonne.com.br\/exames-sonne\/#webpage","url":"https:\/\/clinicasonne.com.br\/exames-sonne\/","name":"Exames \u2013 Cl\u00ednica Sonne1 - Cl\u00ednica Sonne","description":"A HORA DE SER CUIDADA: Agende o exame neurol\u00f3gico Com o encaminhamento m\u00e9dico em m\u00e3os, voc\u00ea j\u00e1 est\u00e1 no caminho certo na cl\u00ednica Sonne. Agendar exame! [rank_math_breadcrumb] A sa\u00fade n\u00e3o pode esperar Na Cl\u00ednica Sonne, estamos comprometidos em fornecer atendimento m\u00e9dico excepcional e abrangente para toda a fam\u00edlia. Com uma equipe altamente qualificada e especializada,","inLanguage":"pt-BR","isPartOf":{"@id":"https:\/\/clinicasonne.com.br\/#website"},"breadcrumb":{"@id":"https:\/\/clinicasonne.com.br\/exames-sonne\/#breadcrumblist"},"datePublished":"2025-01-22T15:11:51-03:00","dateModified":"2025-04-02T01:49:32-03:00"},{"@type":"WebSite","@id":"https:\/\/clinicasonne.com.br\/#website","url":"https:\/\/clinicasonne.com.br\/","name":"Cl\u00ednica Sonne","description":"Neurologia Premium","inLanguage":"pt-BR","publisher":{"@id":"https:\/\/clinicasonne.com.br\/#organization"}}]}
-		</script>
-<!-- All in One SEO -->
-<!-- Google Tag Manager for WordPress by gtm4wp.com -->
-<script data-cfasync="false" data-pagespeed-no-defer="">
-	var gtm4wp_datalayer_name = "dataLayer";
-	var dataLayer = dataLayer || [];
-</script>
-<!-- End Google Tag Manager for WordPress by gtm4wp.com --><!-- Tag do Google (gtag.js) modo de consentimento dataLayer adicionado pelo Site Kit -->
-<script id="google_gtagjs-js-consent-mode-data-layer" type="rocketlazyloadscript">
-window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
-window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
-window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500};
-</script>
-<!-- Fim da tag do Google (gtag.js) modo de consentimento dataLayer adicionado pelo Site Kit -->
-<script type="rocketlazyloadscript">
-		(function(){
-			window.ecsSchemeConfig={systemAuto:false};
-			var m=document.cookie.match(/(?:^|;\s*)ecs_color_scheme=([^;]+)/);
-			if(m&&m[1]==='alt'){
-				document.documentElement.setAttribute('data-ecs-scheme','alt');
-			}else if(!m&&false){
-				if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches){
-					document.documentElement.setAttribute('data-ecs-scheme','alt');
-				}
-			}
-		})();
-		</script>
-<link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="assets/other/index" rel="alternate" title="Feed para Clínica Sonne »" type="application/rss+xml"/>
-<link href="assets/other/index" rel="alternate" title="Feed de comentários para Clínica Sonne »" type="application/rss+xml"/>
-<link href="assets/other/embed_url_https___clinicasonne_com_b" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
-<link href="assets/other/embed_url_https___clinicasonne_com_b" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
-<style id="wp-img-auto-sizes-contain-inline-css">
-img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
-/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-</style>
-<style id="wp-emoji-styles-inline-css">
-
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-/*# sourceURL=wp-emoji-styles-inline-css */
-</style>
-<style id="classic-theme-styles-inline-css">
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-/*# sourceURL=/wp-includes/css/classic-themes.min.css */
-</style>
-<link data-minify="1" href="assets/css/global.e90f6d47_ver_1782867811.css" id="aioseo/css/src/vue/standalone/blocks/table-of-contents/global.scss-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/style_ver_1782867811.css" id="nta-css-popup-css" media="all" rel="stylesheet"/>
-<style id="global-styles-inline-css">
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:root :where(.wp-block-icon svg){width: 24px;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-/*# sourceURL=global-styles-inline-css */
-</style>
-<link href="assets/css/style.min_ver_3_0_1.css" id="hello-elementor-css" media="all" rel="stylesheet"/>
-<link href="assets/css/theme.min_ver_3_0_1.css" id="hello-elementor-theme-style-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/ecs-color-scheme_ver_1782867811.css" id="ecs-color-scheme-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/ecs-container-layout_ver_1782867811.css" id="ecs-container-layout-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/swiper.min_ver_1782867811.css" id="swiper-css" media="all" rel="stylesheet"/>
-<link href="assets/css/e-swiper.min_ver_4_0_7.css" id="e-swiper-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/ecs-mobile-menu_ver_1782867811.css" id="ecs-mobile-menu-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/ecs-editorial-text_ver_1782867811.css" id="ecs-editorial-text-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/elementor-icons.min_ver_1782867811.css" id="elementor-icons-css" media="all" rel="stylesheet"/>
-<link href="assets/css/custom-frontend.min_ver_1782867494.css" id="elementor-frontend-css" media="all" rel="stylesheet"/>
-<link href="assets/css/post-6_ver_1782867494.css" id="elementor-post-6-css" media="all" rel="stylesheet"/>
-<link href="assets/css/custom-pro-frontend.min_ver_1782867494.css" id="elementor-pro-css" media="all" rel="stylesheet"/>
-<link href="assets/css/widget-spacer.min_ver_4_0_7.css" id="widget-spacer-css" media="all" rel="stylesheet"/>
-<link href="assets/css/widget-image.min_ver_4_0_7.css" id="widget-image-css" media="all" rel="stylesheet"/>
-<link href="assets/css/widget-heading.min_ver_4_0_7.css" id="widget-heading-css" media="all" rel="stylesheet"/>
-<link href="assets/css/widget-menu-anchor.min_ver_4_0_7.css" id="widget-menu-anchor-css" media="all" rel="stylesheet"/>
-<link href="assets/css/custom-widget-icon-box.min_ver_1782867494.css" id="widget-icon-box-css" media="all" rel="stylesheet"/>
-<link href="assets/css/custom-widget-image-box.min_ver_1782867494.css" id="widget-image-box-css" media="all" rel="stylesheet"/>
-<link href="assets/css/widget-google_maps.min_ver_4_0_7.css" id="widget-google_maps-css" media="all" rel="stylesheet"/>
-<link href="assets/css/post-3120_ver_1782871379.css" id="elementor-post-3120-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/ecs-style_ver_1782867811.css" id="ecs-styles-css" media="all" rel="stylesheet"/>
-<link href="assets/css/post-58_ver_1699831987.css" id="elementor-post-58-css" media="all" rel="stylesheet"/>
-<style id="rocket-lazyload-inline-css">
-.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(assets/images/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
-/*# sourceURL=rocket-lazyload-inline-css */
-</style>
-<link href="assets/css/fontawesome.min_ver_5_15_3.css" id="elementor-icons-shared-0-css" media="all" rel="stylesheet"/>
-<link data-minify="1" href="assets/css/solid.min_ver_1782867811.css" id="elementor-icons-fa-solid-css" media="all" rel="stylesheet"/>
-<script data-rocket-defer="" data-rocket-src="assets/js/jquery.min_ver_3_7_1.js" defer="" id="jquery-core-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/jquery-migrate.min_ver_3_4_1.js" defer="" id="jquery-migrate-js" type="rocketlazyloadscript"></script>
-<!-- Snippet da tag do Google (gtag.js) adicionado pelo Site Kit -->
-<!-- Snippet do Google Analytics adicionado pelo Site Kit -->
-<script async="" data-rocket-src="assets/js/js_id_GT-PL9Q9D6.js" id="google_gtagjs-js" type="rocketlazyloadscript"></script>
-<script id="google_gtagjs-js-after" type="rocketlazyloadscript">
-window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
-gtag("set","linker",{"domains":["clinicasonne.com.br"]});
-gtag("js", new Date());
-gtag("set", "developer_id.dZTNiMT", true);
-gtag("config", "GT-PL9Q9D6");
-//# sourceURL=google_gtagjs-js-after
-</script>
-<script id="ecs_ajax_load-js-extra">
-var ecs_ajax_params = {"ajaxurl":"https://clinicasonne.com.br/wp-admin/admin-ajax.php","posts":"{\"page\":0,\"pagename\":\"exames-sonne\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"exames-sonne\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
-//# sourceURL=ecs_ajax_load-js-extra
-</script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/ecs_ajax_pagination_ver_1779200633.js" defer="" id="ecs_ajax_load-js" type="rocketlazyloadscript"></script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/ecs_ver_1779200633.js" defer="" id="ecs-script-js" type="rocketlazyloadscript"></script>
-<link href="assets/other/index" rel="https://api.w.org/"/><link href="assets/other/3120" rel="alternate" title="JSON" type="application/json"/><link href="assets/other/xmlrpc_rsd.php" rel="EditURI" title="RSD" type="application/rsd+xml"/>
-<meta content="Site Kit by Google 1.182.0" name="generator"/><script type="rocketlazyloadscript">(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187178207", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><meta content="eyJyIjoiMTowITc6MCEzMDowIiwibyI6Imh0dHBzOlwvXC9jbGluaWNhc29ubmUuY29tLmJyP3RpLW9ubGluZS11c2Vycy1nb29nbGU9MSZhbXA7cD0lMkZleGFtZXMtc29ubmUlMkYmYW1wO193cG5vbmNlPTQ3NzBjNzRlMmUifQ==" name="ti-site-data"/>
-<!-- Google Tag Manager for WordPress by gtm4wp.com -->
-<!-- GTM Container placement set to footer -->
-<script data-cfasync="false" data-pagespeed-no-defer="">
-	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"webmaster"};
-	dataLayer.push( dataLayer_content );
-</script>
-<script data-cfasync="false" data-pagespeed-no-defer="" type="rocketlazyloadscript">
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N9T5BCM');
-</script>
-<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta content="Elementor 4.0.7; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap" name="generator"/>
-<meta content="BejFQaPzh54HDHYGTYhrch0UwcPD_ZAne2-vX-ySZT8" name="google-site-verification"/>
-<style>
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-					background-image: none !important;
-				}
-				@media screen and (max-height: 1024px) {
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-				@media screen and (max-height: 640px) {
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-			</style>
-<link href="assets/images/cropped-Sonne-neurologia-premium-logo1-e1682598891960-32x32.webp" rel="icon" sizes="32x32"/>
-<link href="assets/images/cropped-Sonne-neurologia-premium-logo1-e1682598891960-192x192.webp" rel="icon" sizes="192x192"/>
-<link href="assets/images/cropped-Sonne-neurologia-premium-logo1-e1682598891960-180x180.webp" rel="apple-touch-icon"/>
-<meta content="https://clinicasonne.com.br/wp-content/uploads/2023/04/cropped-Sonne-neurologia-premium-logo1-e1682598891960-270x270.webp" name="msapplication-TileImage"/>
-<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript> <style>.elementor-3120 .elementor-element.elementor-element-1ae7dd8_new{--display:flex;}.elementor-3120 .elementor-element.elementor-element-1ae7dd8_new:not(.elementor-motion-effects-element-type-background), .elementor-3120 .elementor-element.elementor-element-1ae7dd8_new > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url(../images/3e228de6-ellipse-1-copy-3-smart-object-group_1000000000000000000028.png);background-position:top center;background-repeat:no-repeat;}.elementor-3120 .elementor-element.elementor-element-a2d12c1_new{--display:flex;}.elementor-3120 .elementor-element.elementor-element-5dafa5e_new > .elementor-widget-container{margin:0px 0px 0px 12px;}.elementor-3120 .elementor-element.elementor-element-5dafa5e_new .elementor-heading-title{font-family:"Montserrat", Sans-serif;font-size:26px;font-weight:600;color:#FFFFFF;}.elementor-3120 .elementor-element.elementor-element-c200af2_new > .elementor-widget-container{margin:0px 531px 0px 12px;}.elementor-3120 .elementor-element.elementor-element-c200af2_new{column-gap:0px;font-family:"Montserrat", Sans-serif;font-size:16px;font-weight:400;line-height:20px;letter-spacing:-0.3px;color:#FFFFFF;}.elementor-3120 .elementor-element.elementor-element-9d6d832 .elementor-heading-title{font-size:26px!important;color:#FFFFFF!important;}.elementor-3120 .elementor-element.elementor-element-9d6d832{margin-top:40px;margin-bottom:20px;}.elementor-3120 .elementor-element.elementor-element-637365f_new > .elementor-widget-container{margin:0px 0px 12px 12px;}.elementor-3120 .elementor-element.elementor-element-637365f_new .elementor-icon-box-wrapper{align-items:end;gap:10px;}.elementor-3120 .elementor-element.elementor-element-637365f_new .elementor-icon-box-title{margin-block-end:0px;color:#FFFFFF;}.elementor-3120 .elementor-element.elementor-element-637365f_new.elementor-view-stacked .elementor-icon{background-color:#FFFFFF;}.elementor-3120 .elementor-element.elementor-element-637365f_new.elementor-view-framed .elementor-icon, .elementor-3120 .elementor-element.elementor-element-637365f_new.elementor-view-default .elementor-icon{fill:#FFFFFF;color:#FFFFFF;border-color:#FFFFFF;}.elementor-3120 .elementor-element.elementor-element-637365f_new .elementor-icon{font-size:26px;}.elementor-3120 .elementor-element.elementor-element-637365f_new .elementor-icon-box-title, .elementor-3120 .elementor-element.elementor-element-637365f_new .elementor-icon-box-title a{font-family:"Montserrat", Sans-serif;font-size:22px;font-weight:600;letter-spacing:-1.2px;}.elementor-3120 .elementor-element.elementor-element-e3b6729_new .elementor-button{background-color:#43AD51;fill:#FCFCFC;color:#FCFCFC;border-radius:32px 32px 32px 32px;}.elementor-3120 .elementor-element.elementor-element-e3b6729_new > .elementor-widget-container{margin:20px 0px 0px 0px;}.elementor-3120 .elementor-element.elementor-element-e3b6729_new .elementor-button-content-wrapper{flex-direction:row;}.elementor-3120 .elementor-element.elementor-element-e3b6729_new .elementor-button .elementor-button-content-wrapper{gap:14px;}</style><style>.elementor-3120 .elementor-element.elementor-element-8089544,.elementor-3120 .elementor-element.elementor-element-fcb4a97,.elementor-3120 .elementor-element.elementor-element-1ae7dd8,.elementor-3120 .elementor-element.elementor-element-1ae7dd8_new{background-color:#122353;}.elementor-3120 .elementor-element.elementor-element-9d6d832{background-color:#122353;padding:50px 20px 20px;margin-bottom:0!important;}.elementor-3120 .elementor-element.elementor-element-9d6d832 .elementor-heading-title{font-size:32px!important;}</style><meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/></head>
-<body class="wp-singular page-template page-template-elementor_canvas page page-id-3120 wp-theme-hello-elementor elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-3120" data-rsssl="1">
-<div class="elementor elementor-3120" data-elementor-id="3120" data-elementor-type="wp-page">
-<div class="elementor-element elementor-element-2ad4124 e-ecs-flex e-flex e-con-boxed e-con e-parent e-lazyloaded" data-e-type="container" data-element_type="container" data-id="2ad4124" data-settings='{"background_background":"classic","ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-bca3b33 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="bca3b33" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-207a8a9 elementor-widget elementor-widget-spacer" data-e-type="widget" data-element_type="widget" data-id="207a8a9" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-4bc20d0 elementor-widget elementor-widget-image" data-e-type="widget" data-element_type="widget" data-id="4bc20d0" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img alt="" class="attachment-large size-large wp-image-2148" decoding="async" fetchpriority="high" height="130" sizes="(max-width: 430px) 100vw, 430px" src="assets/images/affc961f-01-logo-principal-cor_10by03o0by03m000000028.png" srcset="assets/images/affc961f-01-logo-principal-cor_10by03o0by03m000000028.png 430w, assets/images/affc961f-01-logo-principal-cor_10by03o0by03m000000028-300x91.png 300w" width="430"/> </div>
-</div>
-<div class="elementor-element elementor-element-f877b95 elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="f877b95" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Diagnóstico Neurológico de Alta Precisão em Campinas e Hortolândia</h2> </div>
-</div>
-<div class="elementor-element elementor-element-a41308d elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="a41308d" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Realize seus exames neurológicos na Clínica Sonne com agilidade, tecnologia de ponta e o suporte de médicos especialistas. Tem um encaminhamento em mãos? Agende seu horário de forma simples e rápida.</h2> </div>
-</div>
-<div class="elementor-element elementor-element-0ed0b4a elementor-widget elementor-widget-button" data-e-type="widget" data-element_type="widget" data-id="0ed0b4a" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button elementor-button-link elementor-size-md" href="assets/other/index_phone_5519996283086_text__G04_.html" id="exame1">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon">
-<i aria-hidden="true" class="icon icon-whatsapp-1"></i> </span>
-<span class="elementor-button-text">Agendar meu Exame Neurológico</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-95e68f4 elementor-widget elementor-widget-spacer" data-e-type="widget" data-element_type="widget" data-id="95e68f4" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-387a975 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="387a975" data-settings='{"ecs_container_type":"flex"}'>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-9d6d832 elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="9d6d832" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Confira os exames realizados pela Clínica Sonne</h2> </div>
-</div>
-<div class="elementor-element elementor-element-8089544 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="8089544" data-settings='{"background_background":"classic","ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-c974a81 elementor-widget elementor-widget-spacer" data-e-type="widget" data-element_type="widget" data-id="c974a81" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-722be51 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="722be51" data-settings='{"ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-09d7f5d elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="09d7f5d" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Eletroneuromiografia</h2> </div>
-</div>
-<div class="elementor-element elementor-element-b24d6cf elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="b24d6cf" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1008"><p>A eletroneuromiografia é um exame complementar que consiste em um conjunto de testes diagnósticos para avaliar a função do sistema nervoso periférico: nervos, músculos e junção neuromuscular. </p></div><div class="lp-element lp-pom-text nlh" id="lp-pom-text-1009"><p><strong>Exames disponíveis:</strong></p></div><div class="lp-element lp-pom-text nlh" id="lp-pom-text-1010"><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Membros superiores</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Membros inferiores</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>4 membros</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Fibra única</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Avaliação de transtornos do movimento </p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Segmento complementar ou especial</p></div> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-fcb4a97 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="fcb4a97" data-settings='{"background_background":"classic","ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-0e9ed8f elementor-widget elementor-widget-spacer" data-e-type="widget" data-element_type="widget" data-id="0e9ed8f" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-a6abdca e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="a6abdca" data-settings='{"ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-4d297dc elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="4d297dc" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Eletroencefalograma (EEG)</h2> </div>
-</div>
-<div class="elementor-element elementor-element-8312eed elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="8312eed" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1008"><p>O exame eletroencefalograma permite correlacionar as atividades elétricas cerebrais com eventos clínicos e comportamentais, auxiliando no diagnóstico de distúrbios neurológicos complexos.</p></div><div class="lp-element lp-pom-text nlh" id="lp-pom-text-1009"><p><strong>Exames disponíveis:</strong></p></div><div class="lp-element lp-pom-text nlh" id="lp-pom-text-1010"><p><span data-darkreader-inline-color=""><strong>• </strong>EEG em sono e vigília (rotina)</span></p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Vídeo EEG</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>EEG prolongado</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>EEG quantitativo (mapeamento cerebral)</p></div> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1ae7dd8 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="1ae7dd8" data-settings='{"background_background":"classic","ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-a2d12c1 elementor-widget elementor-widget-spacer" data-e-type="widget" data-element_type="widget" data-id="a2d12c1" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-0a641b2 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="0a641b2" data-settings='{"ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-5dafa5e elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="5dafa5e" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Potenciais Evocados</h2> </div>
-</div>
-<div class="elementor-element elementor-element-c200af2 elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="c200af2" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1008"><div class="lp-element lp-pom-text nlh" id="lp-pom-text-789"><p>O exame de potencial evocado é uma técnica diagnóstica que avalia a atividade elétrica neurológica em resposta a estímulos sensoriais específicos, fornecendo informações sobre a integridade das vias neurais e o funcionamento do sistema nervoso central.</p></div><div class="lp-element lp-pom-text nlh" id="lp-pom-text-831"><p><strong>Exames disponíveis:</strong></p></div><div class="lp-element lp-pom-text nlh" id="lp-pom-text-832"><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Potencial evocado visual</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Potencial evocado do tronco cerebral (PEATE, PEATC ou BERA)</p><p><span data-darkreader-inline-color=""><strong>•  </strong></span>Potencial evocado somatossensitivo</p></div></div> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1ae7dd8 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="1ae7dd8_new" data-settings='{"background_background":"classic","ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-a2d12c1 e-ecs-flex e-flex e-con-boxed e-con e-child" data-e-type="container" data-element_type="container" data-id="a2d12c1_new" data-settings='{"ecs_container_type":"flex"}'>
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-5dafa5e_new elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="5dafa5e_new" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Ultrassom Neuromuscular</h2> </div>
-</div>
-<div class="elementor-element elementor-element-c200af2_new elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="c200af2_new" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1008_new"><div class="lp-element lp-pom-text nlh" id="lp-pom-text-789_new"><p>Um exame de alta precisão e detalhamento, realizado em conjunto com outras avaliações neurológicas para um diagnóstico completo e assertivo das estruturas nervosas e musculares.</p></div></div> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-f8268ca e-con-full e-ecs-flex e-flex e-con e-parent e-lazyloaded" data-e-type="container" data-element_type="container" data-id="f8268ca" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-388e278 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="388e278" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-2bb5ece elementor-widget elementor-widget-heading" data-e-type="widget" data-element_type="widget" data-id="2bb5ece" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Agende agora e cuide da sua saúde</h2> </div>
-</div>
-</div>
-<div class="elementor-element elementor-element-00c5078 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="00c5078" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-adb8840 elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="adb8840" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="text-align: center;">
-<p>Agende o exame na Clínica Sonne hoje mesmo e comece a jornada rumo ao bem-estar. Estamos ansiosos para ajudar quem precisa de exames a viver de forma mais saudável e plena!</p> </div>
-</div>
-</div>
-<div class="elementor-element elementor-element-00c5078 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="00c5078" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-8a63deb elementor-align-center elementor-widget elementor-widget-button" data-e-type="widget" data-element_type="widget" data-id="8a63deb" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button elementor-button-link elementor-size-lg" href="assets/other/index_phone_5519996283086_text__G04_.html" id="exame1">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon">
-<i aria-hidden="true" class="icon icon-whatsapp-1"></i> </span>
-<span class="elementor-button-text">Agendar o exame!</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1a70664 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="1a70664" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-adb8840 elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="adb8840" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Horário de Atendimento: De segunda a sexta, das 08:00 às 17:00 horas.</p><p>Nossas Unidades:</p><p>Campinas: Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, SP, 13020-430</p><p>Hortolândia:. João Blumer, 289 - Remanso Campineiro, Hortolândia - SP, 13184-430</p> </div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1a70664 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="1a70664_new" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-adb8840_new elementor-widget elementor-widget-text-editor" data-e-type="widget" data-element_type="widget" data-id="adb8840_new" data-widget_type="text-editor.default">
-<div class="elementor-widget-container" style="text-align: center;">
-<p>Se precisar, fale diretamente com a nossa equipe:</p> </div>
-</div>
-</div>
-<div class="elementor-element elementor-element-00c5078_new e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="00c5078_new" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-8a63deb_new elementor-align-center elementor-widget elementor-widget-button" data-e-type="widget" data-element_type="widget" data-id="8a63deb_new" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a class="elementor-button elementor-button-link elementor-size-lg" href="assets/other/index_phone_5519996283086_text__G04_.html" id="exame1_recepcao">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon">
-<i aria-hidden="true" class="icon icon-whatsapp-1"></i> </span>
-<span class="elementor-button-text">Fale com a Recepção</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-5d2ccba e-con-full e-ecs-flex e-flex e-con e-parent e-lazyloaded" data-e-type="container" data-element_type="container" data-id="5d2ccba" data-settings='{"background_background":"classic","ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-d0ccc62 e-con-full e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="d0ccc62" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-d9f6acf elementor-widget elementor-widget-spacer" data-e-type="widget" data-element_type="widget" data-id="d9f6acf" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-b7124b3 elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-e-type="widget" data-element_type="widget" data-id="b7124b3" data-widget_type="image-box.default">
-<div class="elementor-widget-container">
-<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img alt="" class="attachment-full size-full wp-image-2169" decoding="async" height="44" src="assets/images/8c181e33-schedule-fill1-wght400-grad0-opsz48_1018018000000000000028.png" width="44"/></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">De segunda a sexta das 08:00 às 17:00 horas</p></div></div> </div>
-</div>
-<div class="elementor-element elementor-element-1b8937d elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-e-type="widget" data-element_type="widget" data-id="1b8937d" data-widget_type="image-box.default">
-<div class="elementor-widget-container">
-<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img alt="" class="attachment-full size-full wp-image-2170" decoding="async" height="52" src="assets/images/86f8a0fc-localizacao-branco_101g01g000000000000028.png" width="52"/></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430</p></div></div> </div>
-</div>
-<div class="elementor-element elementor-element-7260cbf e-con-full elementor-hidden-desktop e-ecs-flex e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="7260cbf" data-settings='{"ecs_container_type":"flex"}'>
-<div class="elementor-element elementor-element-7c06e96 elementor-widget elementor-widget-google_maps" data-e-type="widget" data-element_type="widget" data-id="7c06e96" data-widget_type="google_maps.default">
-<div class="elementor-widget-container">
-<div class="elementor-custom-embed">
-<iframe aria-label="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430" data-lazy-src="assets/other/maps_q_Edif_cio_Medplex_-_Av__Bar_o.html" data-rocket-lazyload="fitvidscompatible" loading="lazy" src="about:blank" title="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430"></iframe><noscript><iframe aria-label="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430" loading="lazy" src="assets/other/maps_q_Edif_cio_Medplex_-_Av__Bar_o.html" title="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430"></iframe></noscript>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-3fa8c25 elementor-widget elementor-widget-image" data-e-type="widget" data-element_type="widget" data-id="3fa8c25" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img alt="" class="attachment-full size-full wp-image-2125" decoding="async" height="59" src="assets/images/02a5caca-logo-sonne.png" width="213"/> </div>
-</div>
-</div>
-</div>
-</div>
-<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<script type="rocketlazyloadscript">
-
-(function(){
-
-  var utmString=(function(){
-
-    var params=['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
-
-    var parts=[];
-
-    params.forEach(function(p){
-
-      var m=new RegExp('[?&]'+p+'=([^&#]*)').exec(location.href);
-
-      if(m) parts.push(p+'='+m[1]);
-
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exames Neurológicos — Clínica Sonne</title>
+  <meta name="description" content="Diagnóstico neurológico de alta precisão em Campinas e Hortolândia. Eletroneuromiografia, EEG, potenciais evocados e ultrassom neuromuscular na Clínica Sonne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    var dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'pagePostType': 'page',
+      'pagePostType2': 'single-page',
+      'pagePostAuthor': 'webmaster',
+      'pagePath': '/',
+      'pageTitle': 'Exames Neurológicos — Clínica Sonne'
     });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N9T5BCM');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    :root {
+      --azul-escuro: #122353;
+      --azul-claro: #9DC9F7;
+      --azul-gelo: #C9DDEF;
+      --verde: #43AD51;
+      --verde-hover: #3A9A47;
+      --branco: #FFFFFF;
+      --preto: #1A1A1A;
+      --cinza: #5A5A5A;
+      --bg-suave: #F8FAFD;
+      --radius: 22px;
+      --radius-btn: 32px;
+      --max-width: 1140px;
+      --space: 80px;
+    }
 
-    return parts.join('&');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  })();
+    html { scroll-behavior: smooth; }
 
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--preto);
+      line-height: 1.6;
+      background: var(--branco);
+    }
 
+    img { max-width: 100%; display: block; }
 
-  if(!utmString) return;
+    a { text-decoration: none; color: inherit; }
 
+    .container {
+      width: 92%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
 
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--verde);
+      color: var(--branco);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: var(--radius-btn);
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(67, 173, 81, 0.28);
+    }
 
-  function patch(){
+    .btn:hover {
+      background: var(--verde-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(67, 173, 81, 0.35);
+    }
 
-    document.querySelectorAll('a[href*="wa.me"],a[href*="whatsapp.com"]').forEach(function(a){
+    .btn svg { width: 20px; height: 20px; fill: currentColor; }
 
-      if(a.dataset.u) return;
+    .section { padding: var(--space) 0; }
 
+    .section-dark {
+      background: var(--azul-escuro);
+      color: var(--branco);
+      position: relative;
+      overflow: hidden;
+    }
 
+    .section-dark::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -120px;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(157, 201, 247, 0.14) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
 
-      // Pega o href decodificando &amp; para &
+    .section-gelo { background: var(--bg-suave); }
 
-      var h = a.getAttribute('href').replace(/&amp;/g, '&');
+    h1, h2, h3 {
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
 
+    h1 { font-size: 42px; }
+    h2 { font-size: 34px; }
+    h3 { font-size: 24px; }
 
+    p { margin-bottom: 16px; }
+    p:last-child { margin-bottom: 0; }
 
-      // Remove UTMs duplicados que já existam
+    ul { list-style: none; padding: 0; }
+    ul li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 10px;
+      color: var(--cinza);
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 7px;
+      height: 7px;
+      background: var(--verde);
+      border-radius: 50%;
+    }
 
-      var params=['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+    .section-dark ul li { color: rgba(255, 255, 255, 0.85); }
+    .section-dark ul li::before { background: var(--azul-claro); }
 
-      params.forEach(function(p){
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--azul-claro);
+      margin-bottom: 16px;
+    }
 
-        h = h.replace(new RegExp('[&?]'+p+'=[^&]*','g'),'');
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      background: url('assets/images/5af950d3-bg_1000000000000000000028.webp') center/cover no-repeat;
+      position: relative;
+    }
 
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(18, 35, 83, 0.94) 0%, rgba(18, 35, 83, 0.82) 55%, rgba(18, 35, 83, 0.68) 100%);
+    }
+
+    .hero .container { position: relative; z-index: 1; }
+
+    .hero h1 {
+      color: var(--branco);
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .intro-text h2 {
+      color: var(--azul-escuro);
+      margin-bottom: 20px;
+    }
+
+    .intro-text p { color: var(--cinza); font-size: 17px; }
+
+    .photos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .photo-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(18, 35, 83, 0.1);
+      background: var(--azul-gelo);
+      min-height: 240px;
+      max-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--azul-escuro);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    @media (min-width: 1025px) {
+      .intro-grid {
+        grid-template-columns: 1fr 1.6fr;
+      }
+      .photo-card {
+        min-height: 320px;
+        max-height: 380px;
+      }
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+    }
+
+    .exames-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .exame-card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: 0 6px 22px rgba(18, 35, 83, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .exame-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(18, 35, 83, 0.14);
+    }
+
+    .exame-card h3 {
+      color: var(--azul-escuro);
+      margin-bottom: 14px;
+    }
+
+    .exame-card p { color: var(--cinza); font-size: 15px; margin-bottom: 18px; }
+    .exame-card strong { color: var(--azul-escuro); }
+    .exame-card .btn { margin-top: 10px; }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 48px;
+    }
+
+    .section-header h2 { color: var(--azul-escuro); margin-bottom: 14px; }
+    .section-dark .section-header h2 { color: var(--branco); }
+    .section-header p { color: var(--cinza); font-size: 17px; }
+    .section-dark .section-header p { color: rgba(255, 255, 255, 0.8); }
+
+    .specialists {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .carousel-section {
+      background: linear-gradient(180deg, var(--branco) 0%, var(--bg-suave) 100%);
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(18, 35, 83, 0.12);
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      aspect-ratio: 4 / 3;
+      background: var(--azul-gelo);
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(18, 35, 83, 0.7);
+      color: var(--branco);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: background 0.2s ease;
+      z-index: 2;
+    }
+
+    .carousel-btn:hover { background: rgba(18, 35, 83, 0.9); }
+    .carousel-btn.prev { left: 16px; }
+    .carousel-btn.next { right: 16px; }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--azul-gelo);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .carousel-dot.active {
+      background: var(--verde);
+      transform: scale(1.2);
+    }
+
+    .agende {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .agende p { color: var(--cinza); font-size: 17px; }
+
+    .unidades {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      text-align: left;
+      margin-top: 40px;
+    }
+
+    .unidade {
+      background: var(--branco);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 6px 22px rgba(18, 35, 83, 0.08);
+    }
+
+    .unidade strong {
+      display: block;
+      color: var(--azul-escuro);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .unidade p { color: var(--cinza); font-size: 15px; margin: 0 0 16px; }
+
+    .mapa {
+      width: 100%;
+      height: 200px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--azul-gelo);
+    }
+
+    .mapa iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: grayscale(25%) contrast(1.05);
+    }
+
+    .horario {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--azul-escuro);
+      color: var(--branco);
+      padding: 12px 22px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 24px;
+    }
+
+    .footer-mini {
+      background: #0C1839;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 24px 0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1024px) {
+      :root { --space: 60px; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 30px; }
+      .intro-grid, .exames-grid, .unidades { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 767px) {
+      :root { --space: 48px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 26px; }
+      h3 { font-size: 21px; }
+      .hero { min-height: auto; padding: 80px 0 60px; }
+      .photos { grid-template-columns: 1fr; }
+      .exame-card { padding: 26px; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9T5BCM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Hero -->
+  <section class="hero section-dark">
+    <div class="container">
+      <span class="badge">Neurologia Premium</span>
+      <h1>Diagnóstico Neurológico de Alta Precisão em Campinas e Hortolândia</h1>
+      <p>Exames neurológicos com agilidade, tecnologia de ponta e o suporte de uma equipe de especialistas. Agende seu horário de forma simples e rápida.</p>
+      <a class="btn" data-cta-label="hero_agendar_exame" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Tenho%20um%20encaminhamento%20e%20quero%20agendar%20meu%20exame%20neurol%C3%B3gico%20na%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.797.372-.275.298-1.051 1.027-1.051 2.507 0 1.481 1.079 2.912 1.229 3.111.149.198 2.122 3.239 5.14 4.54.719.31 1.28.496 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.144 7.437h-.004c-1.107 0-2.192-.275-3.154-.8l-.226-.124-2.346.615.626-2.289-.147-.234c-.567-.904-.867-1.948-.867-3.021 0-3.206 2.608-5.813 5.814-5.813 1.552 0 3.011.606 4.107 1.705 1.096 1.1 1.699 2.558 1.699 4.108 0 3.206-2.609 5.813-5.815 5.813M12.001.8C5.49.8.4 5.889.4 12.4c0 2.186.572 4.318 1.655 6.195L.675 23.301l4.801-1.26c1.806.984 3.84 1.501 5.92 1.501h.005c6.512 0 11.8-5.289 11.8-11.8 0-3.152-1.227-6.117-3.455-8.344C18.123 1.77 15.158.8 12.001.8"/></svg>
+        Agendar meu Exame Neurológico
+      </a>
+    </div>
+  </section>
+
+  <!-- Introdução -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <h2>A saúde não pode esperar</h2>
+          <p>Na Clínica Sonne, estamos comprometidos em fornecer um atendimento médico excepcional para você e sua família.</p>
+          <p>Com uma equipe altamente qualificada e equipamentos modernos, oferecemos uma gama completa de exames médicos para cuidar da sua saúde neurológica e mental.</p>
+          <a class="btn" data-cta-label="intro_agendar_exame" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Quero%20agendar%20um%20exame%20na%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.797.372-.275.298-1.051 1.027-1.051 2.507 0 1.481 1.079 2.912 1.229 3.111.149.198 2.122 3.239 5.14 4.54.719.31 1.28.496 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.144 7.437h-.004c-1.107 0-2.192-.275-3.154-.8l-.226-.124-2.346.615.626-2.289-.147-.234c-.567-.904-.867-1.948-.867-3.021 0-3.206 2.608-5.813 5.814-5.813 1.552 0 3.011.606 4.107 1.705 1.096 1.1 1.699 2.558 1.699 4.108 0 3.206-2.609 5.813-5.815 5.813M12.001.8C5.49.8.4 5.889.4 12.4c0 2.186.572 4.318 1.655 6.195L.675 23.301l4.801-1.26c1.806.984 3.84 1.501 5.92 1.501h.005c6.512 0 11.8-5.289 11.8-11.8 0-3.152-1.227-6.117-3.455-8.344C18.123 1.77 15.158.8 12.001.8"/></svg>
+            Agendar o exame!
+          </a>
+        </div>
+        <div class="photos">
+          <div class="photo-card">
+            <img src="assets/images/clinica/IMG_0483.webp" alt="Sala de exames da Clínica Sonne">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exames -->
+  <section class="section section-gelo">
+    <div class="container">
+      <div class="section-header">
+        <h2>Confira os exames realizados pela Clínica Sonne</h2>
+        <p>Exames modernos, precisos e realizados por especialistas em neurofisiologia clínica.</p>
+      </div>
+      <div class="exames-grid">
+        <article class="exame-card">
+          <h3>Eletroneuromiografia</h3>
+          <p>A eletroneuromiografia é um exame complementar que consiste em um conjunto de testes diagnósticos para avaliar a função do sistema nervoso periférico: nervos, músculos e junção neuromuscular.</p>
+          <p><strong>Exames disponíveis:</strong></p>
+          <ul>
+            <li>Membros superiores</li>
+            <li>Membros inferiores</li>
+            <li>4 membros</li>
+            <li>Fibra única</li>
+            <li>Avaliação de transtornos do movimento</li>
+            <li>Segmento complementar ou especial</li>
+          </ul>
+        </article>
+
+        <article class="exame-card">
+          <h3>Eletroencefalograma (EEG)</h3>
+          <p>O exame eletroencefalograma permite correlacionar as atividades elétricas cerebrais com eventos clínicos e comportamentais, auxiliando no diagnóstico de distúrbios neurológicos complexos.</p>
+          <p><strong>Exames disponíveis:</strong></p>
+          <ul>
+            <li>EEG em sono e vigília (rotina)</li>
+            <li>Vídeo EEG</li>
+            <li>EEG prolongado</li>
+            <li>EEG quantitativo (mapeamento cerebral)</li>
+          </ul>
+        </article>
+
+        <article class="exame-card">
+          <h3>Potenciais Evocados</h3>
+          <p>O exame de potencial evocado é uma técnica diagnóstica que avalia a atividade elétrica neurológica em resposta a estímulos sensoriais específicos, fornecendo informações sobre a integridade das vias neurais e o funcionamento do sistema nervoso central.</p>
+          <p><strong>Exames disponíveis:</strong></p>
+          <ul>
+            <li>Potencial evocado visual</li>
+            <li>Potencial evocado do tronco cerebral (PEATE, PEATC ou BERA)</li>
+            <li>Potencial evocado somatossensitivo</li>
+          </ul>
+        </article>
+
+        <article class="exame-card">
+          <h3>Ultrassom Neuromuscular</h3>
+          <p>O ultrassom neuromuscular é um exame de imagem moderno, indolor e de alta precisão. Ele permite a visualização detalhada de nervos e músculos em tempo real, sendo frequentemente realizado em conjunto com a eletroneuromiografia para um diagnóstico ainda mais assertivo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrossel de Fotos -->
+  <section class="section carousel-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Conheça a Clínica Sonne</h2>
+        <p>Estrutura moderna e acolhedora pensada para o seu conforto e segurança.</p>
+      </div>
+      <div class="carousel" id="clinicCarousel">
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0463.webp" alt="Foto da Clínica Sonne 1" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0464.webp" alt="Foto da Clínica Sonne 2" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0468.webp" alt="Foto da Clínica Sonne 3" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0469.webp" alt="Foto da Clínica Sonne 4" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0471.webp" alt="Foto da Clínica Sonne 5" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0483.webp" alt="Foto da Clínica Sonne 6" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0484.webp" alt="Foto da Clínica Sonne 7" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0485.webp" alt="Foto da Clínica Sonne 8" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_0718.webp" alt="Foto da Clínica Sonne 9" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_2958.webp" alt="Foto da Clínica Sonne 10" loading="lazy"></div>
+          <div class="carousel-slide"><img src="assets/images/clinica/IMG_3152.webp" alt="Foto da Clínica Sonne 11" loading="lazy"></div>
+        </div>
+        <button class="carousel-btn prev" aria-label="Foto anterior">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Próxima foto">&#8250;</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- Especialistas -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Especialistas fazem a experiência na Clínica Sonne ser eficiente e segura!</h2>
+      </div>
+      <div class="specialists">
+        <p>Contamos com um corpo clínico e uma equipe técnica de excelência, formada por profissionais altamente qualificados em neurofisiologia clínica. Nossa equipe possui treinamentos nos principais centros de referência do país e certificações pelas principais sociedades médicas (como a SBNC). Nosso foco é garantir segurança, um atendimento humanizado e diagnósticos de altíssima precisão para todos os nossos pacientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agendamento -->
+  <section class="section section-gelo">
+    <div class="container">
+      <div class="agende">
+        <h2>Agende agora e cuide da sua saúde</h2>
+        <p>Agende o exame na Clínica Sonne hoje mesmo e comece a jornada rumo ao bem-estar. Estamos ansiosos para ajudar quem precisa de exames a viver de forma mais saudável e plena!</p>
+        <div class="horario">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          Horário de Atendimento: De segunda a sexta, das 08:00 às 17:00 horas.
+        </div>
+      </div>
+
+      <div class="unidades">
+        <div class="unidade">
+          <strong>Campinas</strong>
+          <p>Edifício Medplex — Av. Barão de Itapura, 610 — Sala 510 — Taquaral, SP, 13020-430</p>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.296041120552!2d-47.061111699999996!3d-22.9022222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8a5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sAv.%20Bar%C3%A3o%20de%20Itapura%2C%20610%20-%20Taquaral%2C%20Campinas%20-%20SP%2C%2013020-430!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da unidade Campinas"></iframe>
+          </div>
+        </div>
+        <div class="unidade">
+          <strong>Hortolândia</strong>
+          <p>R. João Blumer, 289 — Remanso Campineiro, Hortolândia — SP, 13184-430</p>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.296041120552!2d-47.2200000!3d-22.8600000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8a5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sR.%20Jo%C3%A3o%20Blumer%2C%20289%20-%20Remanso%20Campineiro%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013184-430!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da unidade Hortolândia"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <p>Se precisar, fale diretamente com a nossa equipe:</p>
+        <a class="btn" data-cta-label="footer_falar_recepcao" href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Visitei%20o%20site%20e%20quero%20falar%20com%20a%20recep%C3%A7%C3%A3o%20da%20Cl%C3%ADnica%20Sonne" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.521.074-.797.372-.275.298-1.051 1.027-1.051 2.507 0 1.481 1.079 2.912 1.229 3.111.149.198 2.122 3.239 5.14 4.54.719.31 1.28.496 1.718.634.722.229 1.379.197 1.898.12.579-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.144 7.437h-.004c-1.107 0-2.192-.275-3.154-.8l-.226-.124-2.346.615.626-2.289-.147-.234c-.567-.904-.867-1.948-.867-3.021 0-3.206 2.608-5.813 5.814-5.813 1.552 0 3.011.606 4.107 1.705 1.096 1.1 1.699 2.558 1.699 4.108 0 3.206-2.609 5.813-5.815 5.813M12.001.8C5.49.8.4 5.889.4 12.4c0 2.186.572 4.318 1.655 6.195L.675 23.301l4.801-1.26c1.806.984 3.84 1.501 5.92 1.501h.005c6.512 0 11.8-5.289 11.8-11.8 0-3.152-1.227-6.117-3.455-8.344C18.123 1.77 15.158.8 12.001.8"/></svg>
+          Fale com a Recepção
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-mini">
+    <div class="container">
+      <p>&copy; 2026 Clínica Sonne — Neurologia Premium. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const carousel = document.getElementById('clinicCarousel');
+      const track = carousel.querySelector('.carousel-track');
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      const prevBtn = carousel.querySelector('.carousel-btn.prev');
+      const nextBtn = carousel.querySelector('.carousel-btn.next');
+      const dotsContainer = document.getElementById('carouselDots');
+      let current = 0;
+      const total = slides.length;
+
+      slides.forEach(function(_, index) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (index === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Ir para foto ' + (index + 1));
+        dot.addEventListener('click', function() { goTo(index); });
+        dotsContainer.appendChild(dot);
       });
 
-      h = h.replace(/&&+/g,'&').replace(/\?&/g,'?').replace(/[&?]$/,'');
+      const dots = dotsContainer.querySelectorAll('.carousel-dot');
 
+      function update() {
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        dots.forEach(function(dot, index) {
+          dot.classList.toggle('active', index === current);
+        });
+      }
 
+      function goTo(index) {
+        current = (index + total) % total;
+        update();
+      }
 
-      // Adiciona UTMs limpos
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
 
-      h = h + (h.indexOf('?')>-1?'&':'?') + utmString;
+      nextBtn.addEventListener('click', next);
+      prevBtn.addEventListener('click', prev);
 
+      let startX = 0;
+      let isDragging = false;
+      carousel.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+      }, { passive: true });
+      carousel.addEventListener('touchend', function(e) {
+        if (!isDragging) return;
+        const endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+        if (Math.abs(diff) > 50) {
+          diff > 0 ? next() : prev();
+        }
+        isDragging = false;
+      }, { passive: true });
+    })();
 
+    (function() {
+      var ctaButtons = document.querySelectorAll('[data-cta-label]');
+      ctaButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var ctaLabel = btn.getAttribute('data-cta-label');
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'cta_click',
+            'cta_label': ctaLabel,
+            'cta_url': btn.href,
+            'page_path': '/'
+          });
+        });
+      });
+    })();
+  </script>
 
-      a.setAttribute('href', h);
-
-      a.dataset.u='1';
-
-    });
-
-  }
-
-
-
-  patch();
-
-  document.addEventListener('DOMContentLoaded', patch);
-
-  window.addEventListener('load', patch);
-
-  new MutationObserver(patch).observe(document.documentElement,{childList:true,subtree:true});
-
-})();
-
-</script>
-<!-- GTM Container placement set to footer -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe aria-hidden="true" height="0" src="assets/other/ns_id_GTM-N9T5BCM.html" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><div id="wa"></div> <script type="rocketlazyloadscript">
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-<script id="rocket-browser-checker-js-after" type="rocketlazyloadscript">
-"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
-//# sourceURL=rocket-browser-checker-js-after
-</script>
-<script id="rocket-preload-links-js-extra">
-var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://clinicasonne.com.br","onHoverDelay":"100","rateThrottle":"3"};
-//# sourceURL=rocket-preload-links-js-extra
-</script>
-<script id="rocket-preload-links-js-after" type="rocketlazyloadscript">
-(function() {
-"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
-}());
-
-//# sourceURL=rocket-preload-links-js-after
-</script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/njt-whatsapp_ver_1779200633.js" defer="" id="nta-wa-libs-js" type="rocketlazyloadscript"></script>
-<script id="nta-js-global-js-extra">
-var njt_wa_global = {"ajax_url":"https://clinicasonne.com.br/wp-admin/admin-ajax.php","nonce":"1e642b34f7","defaultAvatarSVG":"\u003Csvg width=\"48px\" height=\"48px\" class=\"nta-whatsapp-default-avatar\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n            viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\"\u003E\n            \u003Cpath style=\"fill:#EDEDED;\" d=\"M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0\n            S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z\"/\u003E\n            \u003Cpath style=\"fill:#55CD6C;\" d=\"M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662\n            c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234\n            c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z\"/\u003E\n            \u003Cpath style=\"fill:#FEFEFE;\" d=\"M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297\n            c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048\n            c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359\n            c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248\n            c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062\n            l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945\"/\u003E\n        \u003C/svg\u003E","defaultAvatarUrl":"https://clinicasonne.com.br/wp-content/plugins/wp-whatsapp/assets/img/whatsapp_logo.svg","timezone":"America/Sao_Paulo","i18n":{"online":"Online","offline":"Offline"},"urlSettings":{"onDesktop":"api","onMobile":"api","openInNewTab":"ON"}};
-//# sourceURL=nta-js-global-js-extra
-</script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/whatsapp-button_ver_1779200633.js" defer="" id="nta-js-global-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/googlesitekit-consent-mode-86cb52dcb9f2b27ed244.js" defer="" id="googlesitekit-consent-mode-js" type="rocketlazyloadscript"></script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/ecs-color-switcher_ver_1779200633.js" defer="" id="ecs-color-switcher-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/swiper.min_ver_8_4_5.js" defer="" id="swiper-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/webpack.runtime.min_ver_4_0_7.js" defer="" id="elementor-webpack-runtime-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/frontend-modules.min_ver_4_0_7.js" defer="" id="elementor-frontend-modules-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/core.min_ver_1_13_3.js" defer="" id="jquery-ui-core-js" type="rocketlazyloadscript"></script>
-<script id="elementor-frontend-js-before" type="rocketlazyloadscript">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":true}},"hasCustomBreakpoints":true},"version":"4.0.7","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/clinicasonne.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/clinicasonne.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/clinicasonne.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"668b42b482","atomicFormsSendForm":"1db82f2dab"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"body_background_background":"gradient","global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":3120,"title":"Exames%20%E2%80%93%20Cl%C3%ADnica%20Sonne1%20-%20Cl%C3%ADnica%20Sonne","excerpt":"","featuredImage":false}};
-//# sourceURL=elementor-frontend-js-before
-</script>
-<script data-rocket-defer="" data-rocket-src="assets/js/frontend.min_ver_4_0_7.js" defer="" id="elementor-frontend-js" type="rocketlazyloadscript"></script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/ecs-slider_ver_1779200633.js" defer="" id="ecs-slider-js" type="rocketlazyloadscript"></script>
-<script id="nta-js-popup-js-extra">
-var njt_wa = {"gdprStatus":"","accounts":[{"accountId":1991,"accountName":"","avatar":"","number":"+5519996283086","title":"Recep\u00e7\u00e3o","predefinedText":"Ol\u00e1! Visitei o site e quero falar com a recep\u00e7\u00e3o da Cl\u00ednica Sonne","willBeBackText":"I will be back in [njwa_time_work]","dayOffsText":"I will be back soon","isAlwaysAvailable":"ON","daysOfWeekWorking":{"sunday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"monday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"tuesday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"wednesday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"thursday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"friday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"saturday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]}}}],"options":{"display":{"displayCondition":"showAllPage","includePages":[],"excludePages":[],"includePosts":[],"showOnDesktop":"ON","showOnMobile":"ON","time_symbols":"h:m"},"styles":{"title":"Atendimento Sonne","responseText":"Nossa equipe responde em alguns minutos.","description":"Seja bem-vindo(a) a nossa Cl\u00ednica!","backgroundColor":"#2db742","textColor":"#fff","titleSize":"18","accountNameSize":"14","descriptionTextSize":"12","regularTextSize":"11","scrollHeight":"500","isShowScroll":"OFF","isShowResponseText":"OFF","btnLabel":" Se precisar!\u003C/br\u003E Fale com a Recep\u00e7\u00e3o","btnLabelWidth":"156","btnPosition":"right","btnLeftDistance":"30","btnRightDistance":"30","btnBottomDistance":"30","isShowBtnLabel":"ON","isShowGDPR":"OFF","gdprContent":"Please accept our \u003Ca href=\"https://ninjateam.org/privacy-policy/\"\u003Eprivacy policy\u003C/a\u003E first to start a conversation.","isShowPoweredBy":"ON"},"analytics":{"enabledGoogle":"OFF","enabledFacebook":"OFF","enabledGoogleGA4":"OFF"}}};
-//# sourceURL=nta-js-popup-js-extra
-</script>
-<script data-minify="1" data-rocket-defer="" data-rocket-src="assets/js/whatsapp-popup_ver_1779200633.js" defer="" id="nta-js-popup-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/webpack-pro.runtime.min_ver_3_7_3.js" defer="" id="elementor-pro-webpack-runtime-js" type="rocketlazyloadscript"></script>
-<script data-rocket-src="assets/js/hooks.min_ver_7496969728ca0f95732d.js" id="wp-hooks-js" type="rocketlazyloadscript"></script>
-<script data-rocket-src="assets/js/i18n.min_ver_781d11515ad3d91786ec.js" id="wp-i18n-js" type="rocketlazyloadscript"></script>
-<script id="wp-i18n-js-after" type="rocketlazyloadscript">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-//# sourceURL=wp-i18n-js-after
-</script>
-<script id="elementor-pro-frontend-js-before" type="rocketlazyloadscript">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/clinicasonne.com.br\/wp-admin\/admin-ajax.php","nonce":"c27b133c0c","urls":{"assets":"https:\/\/clinicasonne.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/clinicasonne.com.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/clinicasonne.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-//# sourceURL=elementor-pro-frontend-js-before
-</script>
-<script data-rocket-defer="" data-rocket-src="assets/js/frontend.min_ver_3_7_3.js" defer="" id="elementor-pro-frontend-js" type="rocketlazyloadscript"></script>
-<script data-rocket-defer="" data-rocket-src="assets/js/preloaded-elements-handlers.min_ver_3_7_3.js" defer="" id="pro-preloaded-elements-handlers-js" type="rocketlazyloadscript"></script>
-<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script async="" data-no-minify="1" data-rocket-src="assets/js/lazyload.min.js" type="rocketlazyloadscript"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script> <script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</body>
 </html>
