@@ -240,14 +240,17 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 28px;
-      max-width: 800px;
+      max-width: 1040px;
       margin: 0 auto;
     }
 
     .exame-card {
       background: var(--branco);
       border-radius: var(--radius);
-      padding: 36px;
+      padding: 0;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       box-shadow: 0 6px 22px rgba(18, 35, 83, 0.08);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
@@ -255,6 +258,22 @@
     .exame-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 32px rgba(18, 35, 83, 0.14);
+    }
+
+    .exame-photo { margin: 0; position: relative; background: var(--azul-gelo); min-height: 320px; }
+    .exame-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .exame-content { padding: 36px; align-self: center; min-width: 0; }
+    .exame-card:nth-child(even) .exame-photo { order: 2; }
+    .exame-card:nth-child(even) { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); }
+    @media (max-width: 767px) {
+      .exame-card, .exame-card:nth-child(even) { grid-template-columns: 1fr; }
+      .exame-card:nth-child(even) .exame-photo { order: 0; }
+      .exame-photo { min-height: 0; aspect-ratio: 4 / 3; }
+      .exame-content { padding: 26px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .exame-card { transition: none; }
+      .exame-card:hover { transform: none; }
     }
 
     .exame-card h3 {
@@ -444,7 +463,7 @@
       h3 { font-size: 21px; }
       .hero { min-height: auto; padding: 80px 0 60px; }
       .photos { grid-template-columns: 1fr; }
-      .exame-card { padding: 26px; }
+      .exame-card { padding: 0; }
       .btn { width: 100%; }
     }
   </style>
@@ -499,6 +518,8 @@
       </div>
       <div class="exames-grid">
         <article class="exame-card">
+          <figure class="exame-photo"><img src="assets/images/exames/eletroneuromiografia.webp" alt="Eletrodos no braço durante exame de eletroneuromiografia" width="900" height="1200" loading="lazy" decoding="async"></figure>
+          <div class="exame-content">
           <h3>Eletroneuromiografia</h3>
           <p>A eletroneuromiografia é um exame complementar que consiste em um conjunto de testes diagnósticos para avaliar a função do sistema nervoso periférico: nervos, músculos e junção neuromuscular.</p>
           <p><strong>Exames disponíveis:</strong></p>
@@ -510,9 +531,12 @@
             <li>Avaliação de transtornos do movimento</li>
             <li>Segmento complementar ou especial</li>
           </ul>
+                  </div>
         </article>
 
         <article class="exame-card">
+          <figure class="exame-photo"><img src="assets/images/exames/eletroencefalograma.webp" alt="Eletrodos posicionados para realização de eletroencefalograma" width="900" height="1200" loading="lazy" decoding="async"></figure>
+          <div class="exame-content">
           <h3>Eletroencefalograma (EEG)</h3>
           <p>O exame eletroencefalograma permite correlacionar as atividades elétricas cerebrais com eventos clínicos e comportamentais, auxiliando no diagnóstico de distúrbios neurológicos complexos.</p>
           <p><strong>Exames disponíveis:</strong></p>
@@ -522,9 +546,12 @@
             <li>EEG prolongado</li>
             <li>EEG quantitativo (mapeamento cerebral)</li>
           </ul>
+                  </div>
         </article>
 
         <article class="exame-card">
+          <figure class="exame-photo"><img src="assets/images/exames/potenciais-evocados.webp" alt="Registro de potenciais evocados com estímulo visual" width="1200" height="1200" loading="lazy" decoding="async"></figure>
+          <div class="exame-content">
           <h3>Potenciais Evocados</h3>
           <p>O exame de potencial evocado é uma técnica diagnóstica que avalia a atividade elétrica neurológica em resposta a estímulos sensoriais específicos, fornecendo informações sobre a integridade das vias neurais e o funcionamento do sistema nervoso central.</p>
           <p><strong>Exames disponíveis:</strong></p>
@@ -533,11 +560,15 @@
             <li>Potencial evocado do tronco cerebral (PEATE, PEATC ou BERA)</li>
             <li>Potencial evocado somatossensitivo</li>
           </ul>
+                  </div>
         </article>
 
         <article class="exame-card">
+          <figure class="exame-photo"><img src="assets/images/exames/ultrassom-neuromuscular.webp" alt="Especialista realizando ultrassom neuromuscular" width="900" height="1200" loading="lazy" decoding="async"></figure>
+          <div class="exame-content">
           <h3>Ultrassom Neuromuscular</h3>
           <p>O ultrassom neuromuscular é um exame de imagem moderno, indolor e de alta precisão. Ele permite a visualização detalhada de nervos e músculos em tempo real, sendo frequentemente realizado em conjunto com a eletroneuromiografia para um diagnóstico ainda mais assertivo.</p>
+                  </div>
         </article>
       </div>
     </div>
