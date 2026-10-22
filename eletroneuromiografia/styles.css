@@ -1050,3 +1050,24 @@ footer {
     transition: none !important;
   }
 }
+
+/* Official horizontal logo supplied by the client. Keep its intrinsic ratio. */
+.brand img {
+  width: 210px;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+  box-shadow: none;
+}
+@media (max-width: 520px) {
+  .brand img {
+    width: 148px;
+    height: auto;
+    border-radius: 0;
+  }
+}
+@media (max-width: 360px) {
+  .brand img {
+    width: 136px;
+  }
+}

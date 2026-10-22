@@ -8,10 +8,11 @@ document.querySelectorAll("[data-cta-label]").forEach((link) => {
       event: "cta_click",
       cta_label: link.dataset.ctaLabel,
       cta_url: link.href,
-      page_path: "/eletroneuromiografia/",
-      landing_page: "enmg_v1",
+      page_path: window.location.pathname.replace(/\/?$/, "/"),
+      landing_page: document.body.dataset.landingPage || "enmg_v1",
       exam: "eletroneuromiografia",
       unit: link.dataset.unit || "nao_selecionada",
+      coverage: document.body.dataset.coverage || "nao_especificada",
     });
   });
 });
