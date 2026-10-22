@@ -31,7 +31,7 @@
       property="og:image"
       content="https://exames.clinicasonne.com.br/assets/images/exames/eletroneuromiografia.webp"
     />
-    <link rel="icon" href="./assets/sonne.webp" type="image/webp" />
+    <link rel="icon" href="./assets/sonne-avatar.webp" type="image/webp" />
     <link
       rel="preload"
       as="image"
@@ -39,6 +39,13 @@
       fetchpriority="high"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="./assets/inter-latin.woff2"
+      type="font/woff2"
+      crossorigin
+    />
     <script>
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
@@ -69,8 +76,8 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#inicio" aria-label="Clínica Sonne — início">
-          <img src="./assets/sonne.webp" alt="" width="44" height="44" />
-          <span><strong>Sonne</strong><small>NEUROLOGIA PREMIUM</small></span>
+          <img src="./assets/sonne-avatar.webp" alt="" width="46" height="46" />
+          <span><strong>Sonne</strong><small>EXAMES NEUROLÓGICOS</small></span>
         </a>
         <nav aria-label="Navegação principal">
           <a href="#exame">O exame</a><a href="#unidades">Onde fazer</a
@@ -85,12 +92,9 @@
       <section class="hero" id="inicio" aria-labelledby="titulo">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">
-              <span class="status-dot" aria-hidden="true"></span> EXAME DE ENMG
-              · CLÍNICA SONNE
-            </p>
+            <p class="eyebrow">CLÍNICA SONNE · EXAME DE ENMG</p>
             <h1 id="titulo">
-              Eletroneuro<wbr />miografia<br /><span
+              Eletroneuromiografia<br /><span
                 >em Campinas<br />e Hortolândia.</span
               >
             </h1>
@@ -99,25 +103,29 @@
               para o seu exame e receba orientação da nossa equipe desde o
               agendamento.
             </p>
-            <a
-              class="button button-primary"
-              id="primeirobotao"
-              href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20valores%20e%20hor%C3%A1rios%20para%20eletroneuromiografia%20na%20Cl%C3%ADnica%20Sonne."
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cta-label="hero_consultar_enmg"
-              >Consultar valores e horários
-              <span aria-hidden="true">↗</span></a
-            >
-            <p class="cta-note">Fale com a equipe pelo WhatsApp.</p>
-            <a class="location-link" href="#unidades"
-              ><svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z" />
-                <circle cx="12" cy="10" r="2.5" />
-              </svg>
-              Veja os endereços das duas unidades
-              <span aria-hidden="true">↓</span></a
-            >
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                id="primeirobotao"
+                href="https://wa.me/5519996283086?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20valores%20e%20hor%C3%A1rios%20para%20eletroneuromiografia%20na%20Cl%C3%ADnica%20Sonne."
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cta-label="hero_consultar_enmg"
+                >Consultar valores e horários
+                <span aria-hidden="true">→</span></a
+              >
+              <a class="button button-ghost" href="#unidades"
+                >Conhecer as unidades</a
+              >
+            </div>
+            <p class="cta-note">
+              Valores e horários pelo WhatsApp, com a equipe Sonne.
+            </p>
+            <ul class="trust-list" aria-label="Informações sobre o atendimento">
+              <li>Orientação para o seu exame</li>
+              <li>Campinas e Hortolândia</li>
+              <li>Agendamento pelo WhatsApp</li>
+            </ul>
           </div>
           <figure class="hero-visual">
             <img
@@ -129,30 +137,15 @@
               fetchpriority="high"
               decoding="async"
             />
-            <span class="photo-label"
-              >ESTRUTURA SONNE <span aria-hidden="true">↗</span></span
-            >
             <figcaption>
-              <span class="caption-icon" aria-hidden="true">✳</span>
               <div>
-                <strong>Cuidado em cada etapa.</strong
+                <strong>Seu exame, com cuidado em cada etapa.</strong
                 ><span>Do primeiro contato à realização do exame.</span>
               </div>
             </figcaption>
           </figure>
         </div>
       </section>
-      <div class="benefits-strip">
-        <div class="container benefits-grid">
-          <p><span aria-hidden="true">01</span> Exame de nervos e músculos</p>
-          <p>
-            <span aria-hidden="true">02</span> Orientação para o seu agendamento
-          </p>
-          <p>
-            <span aria-hidden="true">03</span> Duas unidades para receber você
-          </p>
-        </div>
-      </div>
 
       <section
         class="section exam-section"
@@ -492,8 +485,13 @@
     <footer>
       <div class="container footer-inner">
         <a class="brand" href="#inicio"
-          ><img src="./assets/sonne.webp" alt="" width="40" height="40" /><span
-            ><strong>Sonne</strong><small>NEUROLOGIA PREMIUM</small></span
+          ><img
+            src="./assets/sonne-avatar.webp"
+            alt=""
+            width="40"
+            height="40"
+          /><span
+            ><strong>Sonne</strong><small>EXAMES NEUROLÓGICOS</small></span
           ></a
         >
         <p>

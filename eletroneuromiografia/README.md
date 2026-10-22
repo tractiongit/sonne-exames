@@ -13,7 +13,7 @@ Não há dependências de build. Publicar a pasta junto com os assets já existe
 - Referência visual: páginas Sonne de otoneurologia e neuropediatria (azul, fundos claros, tipografia e marca).
 - Informações de exame, modalidades, endereços e WhatsApp: página atual `../index.html`.
 - Fotos reais reutilizadas de `../assets/images/exames/eletroneuromiografia.webp` e `../assets/images/clinica/IMG_0483.webp`.
-- Marca copiada da página local de otoneurologia; fonte Montserrat hospedada localmente com licença OFL em `assets/`.
+- Marca copiada da página local de otoneurologia; fonte Inter hospedada localmente com licença OFL em `assets/`.
 - Valores, duração, entrega de laudo, preparo e cobertura de planos são encaminhados à equipe; nenhuma condição comercial não confirmada foi anunciada.
 
 ## Medição e teste
@@ -29,3 +29,7 @@ Para o experimento de página, usar esta URL no braço experimental, preservando
 Chromium nas larguras 320, 390, 768, 1024 e 1440 px: sem overflow horizontal, imagens e fonte carregadas, âncoras válidas, FAQ por clique e teclado, evento único de CTA com unidade correta, sem erros de JS/HTTP. Links e FAQ também verificados sem JavaScript. Conferência visual desktop e celular; preview e script de QA ficam fora do repositório.
 
 Status: implementação para revisão. Publicação e configuração do experimento são etapas posteriores.
+
+## Revisão visual — 22/10/2026
+
+Ajuste solicitado com referência direta a https://neurotorrino.clinicasonne.com.br/: Inter variável, escala de títulos e textos ampliada, marca e avatar nas proporções da referência, fundo fotográfico/abstrato original, botões em pílula, cards arredondados e tratamento consistente de espaços e cores. Conteúdo e eventos de conversão preservados.
